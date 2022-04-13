@@ -12,13 +12,13 @@ public class BishopBlackTest {
     @Test
     public void testPositionIsSuccessful() {
         BishopBlack bishopBlack = new BishopBlack(Cell.C8);
-        assertThat(bishopBlack.position(), is(Cell.findBy(2,0)));
+        assertThat(bishopBlack.position(), is(Cell.findBy(2, 0)));
     }
 
     @Test
     public void testCopyIsSuccessful() {
         BishopBlack bishopBlack = new BishopBlack(Cell.C8);
-        assertThat(bishopBlack.copy(Cell.F8).position(), is(Cell.findBy(5,0)));
+        assertThat(bishopBlack.copy(Cell.F8).position(), is(Cell.findBy(5, 0)));
     }
 
     @Test (expected =  ImpossibleMoveException.class)
